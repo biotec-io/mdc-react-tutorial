@@ -5,6 +5,7 @@
   "author": "Edgar Talledos <onimenotsuki@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@material/layout-grid": "^0.24.0",
     "@material/toolbar": "^0.30.0",
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
