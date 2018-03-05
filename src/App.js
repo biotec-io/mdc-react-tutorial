@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-/* import logo from './logo.svg';*/
-import './App.scss';
+
 import Header from './components/Header';
 import Grid from './components/Grid';
 import Card from './components/Card';
+import './App.scss';
 
 class App extends Component {
   render() {
