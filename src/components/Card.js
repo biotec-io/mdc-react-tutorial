@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Card = ({ children }) => (
-  <div className="mdc-card">
+  <div className="mdc-card my-card">
     <div className="mdc-card__media">
       <div className="mdc-card__content">
         <div className="mdc-card__primary-action">
