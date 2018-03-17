@@ -1,5 +1,4 @@
 import glamorous from 'glamorous';
-
 import './Card.scss';
 
 export const Card = glamorous.div('mdc-card my-card');

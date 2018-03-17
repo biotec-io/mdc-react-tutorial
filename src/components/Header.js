@@ -1,13 +1,7 @@
-import React from 'react';
+import glamorous from 'glamorous';
+import './Toolbar.scss';
 
-const Header = ({ children }) => (
-  <header className="mdc-toolbar">
-    <div className="mdc-toolbar__row">
-      <section className="mdc-toolbar__section">
-        <span className="mdc-toolbar__title">{children}</span>
-      </section>
-    </div>
-  </header>
-);
-
-export default Header;
+export const Toolbar = glamorous.div('mdc-toolbar');
+export const ToolbarRow = glamorous.div('mdc-toolbar__row');
+export const ToolbarSection = glamorous.div('mdc-toolbar__section');
+export const ToolbarTitle = glamorous.div('mdc-toolbar__title');

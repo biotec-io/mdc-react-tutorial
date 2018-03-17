@@ -1,4 +1,5 @@
 import glamorous from 'glamorous';
+import './Grid.scss';
 
 export const Grid = glamorous.div('mdc-layout-grid');
 export const GridInner = glamorous.div('mdc-layout-grid__inner');
