@@ -1,19 +1,5 @@
-import React from 'react';
+import glamorous from 'glamorous';
 
-const Grid = ({ children }) => (
-  <div className="mdc-layout-grid">
-    <div className="mdc-layout-grid__inner">
-      <div className="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4">
-        {children}
-      </div>
-      <div className="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4">
-        {children}
-      </div>
-      <div className="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4">
-        {children}
-      </div>
-    </div>
-  </div>
-);
-
-export default Grid;
+export const Grid = glamorous.div('mdc-layout-grid');
+export const GridInner = glamorous.div('mdc-layout-grid__inner');
+export const GridInnerCell = glamorous.div('mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4');

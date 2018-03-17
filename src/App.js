@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from './components/Header';
-import Grid from './components/Grid';
+import { Grid, GridInner, GridInnerCell } from './components/Grid';
 import {
   Card,
   CardMedia,
@@ -17,17 +17,21 @@ class App extends Component {
       <div className="mdc-typography">
         <Header>Welcome to React</Header>
         <Grid>
-          <Card>
-            <CardMedia>
-              <CardContent>
-                <CardAction>
-                  <h2 className="mdc-typography--title">
-                    An awesome title
-                  </h2>
-                </CardAction>
-              </CardContent>
-            </CardMedia>
-          </Card>
+          <GridInner>
+            <GridInnerCell>
+              <Card>
+                <CardMedia>
+                  <CardContent>
+                    <CardAction>
+                      <h2 className="mdc-typography--title">
+                        An awesome title
+                      </h2>
+                    </CardAction>
+                  </CardContent>
+                </CardMedia>
+              </Card>
+            </GridInnerCell>
+          </GridInner>
         </Grid>
       </div>
     );
