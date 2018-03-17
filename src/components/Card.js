@@ -1,15 +1,8 @@
-import React from 'react';
+import glamorous from 'glamorous';
 
-const Card = ({ children }) => (
-  <div className="mdc-card my-card">
-    <div className="mdc-card__media">
-      <div className="mdc-card__content">
-        <div className="mdc-card__primary-action">
-          <h2 className="mdc-typography--title">{children}</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-);
+import './Card.scss';
 
-export default Card;
+export const Card = glamorous.div('mdc-card my-card');
+export const CardMedia = glamorous.div('mdc-card__media');
+export const CardContent = glamorous.div('mdc_card__content');
+export const CardAction = glamorous.div('mdc-card__primary-action');

@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 
 import Header from './components/Header';
 import Grid from './components/Grid';
-import Card from './components/Card';
+import {
+  Card,
+  CardMedia,
+  CardContent,
+  CardAction
+} from './components/Card';
+
 import './App.scss';
 
 class App extends Component {
@@ -12,7 +18,15 @@ class App extends Component {
         <Header>Welcome to React</Header>
         <Grid>
           <Card>
-            An awesome title
+            <CardMedia>
+              <CardContent>
+                <CardAction>
+                  <h2 className="mdc-typography--title">
+                    An awesome title
+                  </h2>
+                </CardAction>
+              </CardContent>
+            </CardMedia>
           </Card>
         </Grid>
       </div>
